@@ -3,11 +3,15 @@
 <HTML>
 
 <head> 
-    <script type="text/javascript"> function show_alert() { alert("Uwaga! To jest alert box!"); } </script> 
+    <script type="text/javascript"> 
+        function show_alert() { alert("Uwaga! To jest alert box!"); } 
+        function okno_zamknij() {window.close()}
+    </script> 
 </head> 
 
 <body> 
-    <input type="button" onclick="show_alert()" value="Pokaż Alert Box" /> 
+    <input type="button" onclick="show_alert()" value="Pokaż Alert Box" /> <br><br>
+    <button onclick="okno_zamknij()">zamknij okno</button>
 </body> 
 
 </html> 
